@@ -6,14 +6,12 @@ import com.windf.study.springcloud.course.service.CourseService;
 import com.windf.study.springcloud.course.service.ElectiveService;
 import com.windf.study.springcloud.user.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/course")
 public class ElectiveController {
 
     @Autowired

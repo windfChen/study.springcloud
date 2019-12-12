@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="client-course" />
+        <module name="client-user" />
         <module name="module-class" />
         <module name="module-course-controller" />
-        <module name="client-user" />
         <module name="module-course-repository-mysql" />
-        <module name="module-user-controller" />
-        <module name="service-eureka" />
-        <module name="module-user-repository-mysql" />
         <module name="module-user" />
+        <module name="module-user-controller" />
+        <module name="module-user-repository-mysql" />
+        <module name="service-eureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="abstract-combination" target="1.8" />
+      <module name="client-course" target="1.8" />
       <module name="client-user" target="1.8" />
       <module name="module-class" target="1.8" />
       <module name="module-course" target="1.8" />

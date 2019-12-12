@@ -24,7 +24,7 @@ public class ElectiveRepositoryImpl implements ElectiveRepository {
     @Override
     public void addUser(final Integer courseId, final Long userId) {
 
-        jdbcTemplate.execute("INSERT INTO t_elective (code, name) VALUES (?, ?);",
+        jdbcTemplate.execute("INSERT INTO t_elective (fk_course_id, fk_user_id) VALUES (?, ?);",
                 new PreparedStatementCallback<Boolean>() {
 
                     @Nullable
