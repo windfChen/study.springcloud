@@ -24,13 +24,13 @@ public class ElectiveController {
         return "success";
     }
 
-    @PostMapping("/elective/user/{courseId}")
-    public List<User> listAllUserByCourseId(@PathVariable("courseId") Integer courseId) {
-        return electiveService.listAllUserByCourseId(courseId);
+    @GetMapping("/elective/course/{courseId}")
+    public List<Elective> listAllByCourseId(@PathVariable("courseId") Integer courseId) {
+        return electiveService.listAllByCourseId(courseId);
     }
 
-    @PostMapping("/elective/course/{userId}")
-    public List<Course> listAllCourseByUserId(@PathVariable("userId") Long userId) {
-        return electiveService.listAllCourseByUserId(userId);
+    @GetMapping("/elective/user/{userId}")
+    public List<Elective> listAllByUserId(@PathVariable("userId") Long userId) {
+        return electiveService.listAllByUserId(userId);
     }
 }

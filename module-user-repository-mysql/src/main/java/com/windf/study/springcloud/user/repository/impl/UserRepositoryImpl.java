@@ -14,6 +14,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -56,5 +57,13 @@ public class UserRepositoryImpl implements UserRepository {
                 "select id, name from t_user",
                 new BeanPropertyRowMapper<User>(User.class));
         return users;
+    }
+
+    @Override
+    public User getUserById(Long id) {
+        List<User> users = jdbcTemplate.query(
+                "select id, name from t_user where id = '" + id + "'",
+                new BeanPropertyRowMapper<User>(User.class));
+        return users == null || users.size() == 0? null: users.get(0);
     }
 }

@@ -1,9 +1,8 @@
 package com.windf.study.springcloud.course.service.impl;
 
-import com.windf.study.springcloud.course.domain.Course;
+import com.windf.study.springcloud.course.domain.Elective;
 import com.windf.study.springcloud.course.repository.ElectiveRepository;
 import com.windf.study.springcloud.course.service.ElectiveService;
-import com.windf.study.springcloud.user.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,12 +20,12 @@ public class ElectiveServiceImpl implements ElectiveService {
     }
 
     @Override
-    public List<User> listAllUserByCourseId(Integer courseId) {
-        return electiveRepository.listAllUserByCourseId(courseId);
+    public List<Elective> listAllByCourseId(Integer courseId) {
+        return electiveRepository.listAllByCourseId(courseId);
     }
 
     @Override
-    public List<Course> listAllCourseByUserId(Long userId) {
-        return electiveRepository.listAllCourseByUserId(userId);
+    public List<Elective> listAllByUserId(Long userId) {
+        return electiveRepository.listAllByUserId(userId);
     }
 }

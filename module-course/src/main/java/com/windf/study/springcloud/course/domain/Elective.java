@@ -4,7 +4,7 @@ import com.windf.study.springcloud.user.domain.User;
 
 public class Elective {
     private long id;
-    private Course clazz;
+    private Course course;
     private User user;
 
     public long getId() {
@@ -15,12 +15,12 @@ public class Elective {
         this.id = id;
     }
 
-    public Course getClazz() {
-        return clazz;
+    public Course getCourse() {
+        return course;
     }
 
-    public void setClazz(Course clazz) {
-        this.clazz = clazz;
+    public void setCourse(Course course) {
+        this.course = course;
     }
 
     public User getUser() {

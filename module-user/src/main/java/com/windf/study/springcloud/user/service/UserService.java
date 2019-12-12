@@ -9,4 +9,6 @@ public interface UserService {
     boolean save(User user);
 
     Collection<User> findAll();
+
+    User getUserById(Long id);
 }

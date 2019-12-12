@@ -8,4 +8,6 @@ public interface UserRepository {
     boolean save(User user);
 
     Collection<User> findAll();
+
+    User getUserById(Long id);
 }

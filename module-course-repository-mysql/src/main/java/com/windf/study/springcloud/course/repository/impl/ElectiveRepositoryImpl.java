@@ -1,9 +1,9 @@
 package com.windf.study.springcloud.course.repository.impl;
 
-import com.windf.study.springcloud.course.domain.Course;
-import com.windf.study.springcloud.course.repository.CourseRepository;
+import com.windf.study.springcloud.course.domain.Elective;
 import com.windf.study.springcloud.course.repository.ElectiveRepository;
-import com.windf.study.springcloud.user.domain.User;
+import com.windf.study.springcloud.course.repository.impl.po.ElectivePO;
+import com.windf.study.springcloud.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -14,6 +14,7 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -21,6 +22,10 @@ public class ElectiveRepositoryImpl implements ElectiveRepository {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    private UserService userService;
+
     @Override
     public void addUser(final Integer courseId, final Long userId) {
 
@@ -38,33 +43,44 @@ public class ElectiveRepositoryImpl implements ElectiveRepository {
     }
 
     @Override
-    public List<User> listAllUserByCourseId(Integer courseId) {
+    public List<Elective> listAllByCourseId(Integer courseId) {
 
-        List<User> users = jdbcTemplate.query(
+        List<ElectivePO> electivePOs = jdbcTemplate.query(
                 "SELECT " +
-                        "  u.id, " +
-                        "  u.NAME " +
+                        "  e.id, " +
+                        "  e.fk_user_id as userId, " +
+                        "  e.fk_course_id as courseId " +
                         "  FROM " +
                         "t_elective e " +
-                        "INNER JOIN t_user u ON e.fk_user_id = u.id " +
                         "where e.fk_course_id = '" + courseId + "' ",
-                new BeanPropertyRowMapper<User>(User.class));
-        return users;
+                new BeanPropertyRowMapper<ElectivePO>(ElectivePO.class));
+
+        List<Elective> result = new ArrayList<>();
+        for (ElectivePO electivePO : electivePOs) {
+            Elective elective = electivePO.toElective();
+
+            elective.setUser(userService.getUserById(elective.getUser().getId()));
+
+            result.add(elective);
+        }
+
+        return result;
     }
 
     @Override
-    public List<Course> listAllCourseByUserId(Long userId) {
+    public List<Elective> listAllByUserId(Long userId) {
 
-        List<Course> courses = jdbcTemplate.query(
+        List<Elective> courses = jdbcTemplate.query(
                 "SELECT" +
-                        "  c.id, " +
-                        "  c.CODE, " +
-                        "  c.NAME " +
+                        "  e.id as id, " +
+                        "  c.id as `course.id`, " +
+                        "  c.CODE as `course.code`," +
+                        "  c.NAME as `course.name` " +
                         "FROM " +
                         "  t_elective e " +
                         "INNER JOIN t_course c ON e.fk_course_id = c.id " +
-                        "where e.fk_user_id = ' + userId + '",
-                new BeanPropertyRowMapper<Course>(Course.class));
+                        "where e.fk_user_id = '" + userId + "'",
+                new BeanPropertyRowMapper<Elective>(Elective.class));
         return courses;
     }
 }
