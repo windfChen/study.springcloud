@@ -37,12 +37,12 @@
 
         <dependency>
             <groupId>com.windf.study.springcloud</groupId>
-            <artifactId>module-user</artifactId>
+            <artifactId>module-user-controller</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.windf.study.springcloud</groupId>
-            <artifactId>module-user-controller</artifactId>
+            <artifactId>module-user-business</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
