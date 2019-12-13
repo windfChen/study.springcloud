@@ -13,7 +13,7 @@ import java.util.Map;
 @Service
 public class UserServiceImplRemote implements UserService {
 
-    private static final String PROVIDER_SERVER_URL_PREFIX = "http://localhost:8080";
+    private static final String PROVIDER_SERVER_URL_PREFIX = "http://CLIENT-USER";
 
     @Autowired
     private RestTemplate restTemplate;

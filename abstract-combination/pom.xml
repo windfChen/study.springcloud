@@ -37,7 +37,7 @@
         <module>../module-course-repository-mysql</module>
         <module>../client-course</module>
 
-<!--        <module>../service-eureka</module>-->
+        <module>../service-eureka</module>
 
     </modules>
 

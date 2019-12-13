@@ -12,6 +12,7 @@
         <module name="module-user-repository" />
         <module name="module-user-controller" />
         <module name="module-course-business" />
+        <module name="service-eureka" />
         <module name="module-user-remote" />
         <module name="module-user-api" />
         <module name="module-user-repository-mysql" />

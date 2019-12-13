@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/../module-user-remote/module-user-remote.iml" filepath="$PROJECT_DIR$/../module-user-remote/module-user-remote.iml" />
       <module fileurl="file://$PROJECT_DIR$/../module-user-repository/module-user-repository.iml" filepath="$PROJECT_DIR$/../module-user-repository/module-user-repository.iml" />
       <module fileurl="file://$PROJECT_DIR$/../module-user-repository-mysql/module-user-repository-mysql.iml" filepath="$PROJECT_DIR$/../module-user-repository-mysql/module-user-repository-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../service-eureka/service-eureka.iml" filepath="$PROJECT_DIR$/../service-eureka/service-eureka.iml" />
     </modules>
   </component>
 </project>
