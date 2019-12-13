@@ -22,28 +22,24 @@
     </properties>
 
     <modules>
-        <module>../module-user</module>
+        <module>../module-user-api</module>
+        <module>../module-user-business</module>
         <module>../module-user-controller</module>
+        <module>../module-user-remote</module>
+        <module>../module-user-repository</module>
         <module>../module-user-repository-mysql</module>
         <module>../client-user</module>
-        <module>../module-course</module>
+
+        <module>../module-course-api</module>
+        <module>../module-course-business</module>
         <module>../module-course-controller</module>
+        <module>../module-course-repository</module>
         <module>../module-course-repository-mysql</module>
         <module>../client-course</module>
 
-        <module>../service-eureka</module>
+<!--        <module>../service-eureka</module>-->
 
     </modules>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.windf.study.springcloud</groupId>
-                <artifactId>module-user</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-        </dependencies>
-
-    </dependencyManagement>
 
 </project>

@@ -18,7 +18,7 @@
     </dependency>
     <dependency>
       <groupId>com.windf.study.springcloud</groupId>
-      <artifactId>module-course</artifactId>
+      <artifactId>module-course-api</artifactId>
       <version>1.0.0</version>
     </dependency>
   </dependencies>

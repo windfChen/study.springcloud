@@ -6,15 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="module-course-controller" />
+        <module name="module-user-business" />
+        <module name="module-course-api (2)" />
         <module name="client-user" />
-        <module name="module-course-repository-mysql" />
-        <module name="client-course" />
+        <module name="module-user-repository" />
         <module name="module-user-controller" />
-        <module name="module-course" />
-        <module name="service-eureka" />
+        <module name="module-course-business" />
+        <module name="module-user-remote" />
+        <module name="module-user-api" />
         <module name="module-user-repository-mysql" />
-        <module name="module-user" />
+        <module name="module-course-repository" />
+        <module name="module-course-controller" />
+        <module name="module-course-repository-mysql" />
+        <module name="module-course-api" />
+        <module name="module-course-api (1)" />
+        <module name="client-course" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,11 +28,18 @@
       <module name="client-course" target="1.8" />
       <module name="client-user" target="1.8" />
       <module name="module-class" target="1.8" />
-      <module name="module-course" target="1.8" />
+      <module name="module-course-api" target="1.8" />
+      <module name="module-course-api (1)" target="1.8" />
+      <module name="module-course-api (2)" target="1.8" />
+      <module name="module-course-business" target="1.8" />
       <module name="module-course-controller" target="1.8" />
+      <module name="module-course-repository" target="1.8" />
       <module name="module-course-repository-mysql" target="1.8" />
-      <module name="module-user" target="1.8" />
+      <module name="module-user-api" target="1.8" />
+      <module name="module-user-business" target="1.8" />
       <module name="module-user-controller" target="1.8" />
+      <module name="module-user-remote" target="1.8" />
+      <module name="module-user-repository" target="1.8" />
       <module name="module-user-repository-mysql" target="1.8" />
       <module name="service-eureka" target="1.8" />
     </bytecodeTargetLevel>
@@ -36,11 +49,17 @@
       <module name="client-course" options="-parameters" />
       <module name="client-user" options="-parameters" />
       <module name="module-class" options="-parameters" />
-      <module name="module-course" options="-parameters" />
+      <module name="module-course-api" options="-parameters" />
+      <module name="module-course-api (2)" options="-parameters" />
+      <module name="module-course-business" options="-parameters" />
       <module name="module-course-controller" options="-parameters" />
+      <module name="module-course-repository" options="-parameters" />
       <module name="module-course-repository-mysql" options="-parameters" />
-      <module name="module-user" options="-parameters" />
+      <module name="module-user-api" options="-parameters" />
+      <module name="module-user-business" options="-parameters" />
       <module name="module-user-controller" options="-parameters" />
+      <module name="module-user-remote" options="-parameters" />
+      <module name="module-user-repository" options="-parameters" />
       <module name="module-user-repository-mysql" options="-parameters" />
       <module name="service-eureka" options="-parameters" />
     </option>

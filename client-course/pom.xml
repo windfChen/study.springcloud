@@ -20,24 +20,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.windf.study.springcloud</groupId>
-            <artifactId>module-course-controller</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.windf.study.springcloud</groupId>
-            <artifactId>module-course-repository-mysql</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.windf.study.springcloud</groupId>
-            <artifactId>module-user-repository-mysql</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
@@ -52,6 +34,28 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.windf.study.springcloud</groupId>
+            <artifactId>module-course-controller</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.windf.study.springcloud</groupId>
+            <artifactId>module-course-business</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.windf.study.springcloud</groupId>
+            <artifactId>module-course-repository-mysql</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.windf.study.springcloud</groupId>
+            <artifactId>module-user-remote</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
