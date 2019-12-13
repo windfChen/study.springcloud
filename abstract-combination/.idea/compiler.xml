@@ -6,15 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="client-course" />
-        <module name="client-user" />
-        <module name="module-class" />
         <module name="module-course-controller" />
+        <module name="client-user" />
         <module name="module-course-repository-mysql" />
-        <module name="module-user" />
+        <module name="client-course" />
         <module name="module-user-controller" />
-        <module name="module-user-repository-mysql" />
+        <module name="module-course" />
         <module name="service-eureka" />
+        <module name="module-user-repository-mysql" />
+        <module name="module-user" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +33,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client-course" options="-parameters" />
       <module name="client-user" options="-parameters" />
       <module name="module-class" options="-parameters" />
       <module name="module-course" options="-parameters" />

@@ -2,6 +2,9 @@ package com.windf.study.springcloud.course.domain;
 
 import com.windf.study.springcloud.user.domain.User;
 
+/**
+ * 选课的信息
+ */
 public class Elective {
     private long id;
     private Course course;

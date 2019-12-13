@@ -1,0 +1,7 @@
+/module-user-repository-mysql/*.iml
+/module-user-controller/*.iml
+/module-user/*.iml
+/module-user/target
+/module-course-repository-mysql/*.iml
+/module-course-controller/*.iml
+/module-course/*.iml

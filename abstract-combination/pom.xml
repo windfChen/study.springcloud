@@ -29,6 +29,10 @@
         <module>../module-course</module>
         <module>../module-course-controller</module>
         <module>../module-course-repository-mysql</module>
+        <module>../client-course</module>
+
+        <module>../service-eureka</module>
+
     </modules>
 
     <dependencyManagement>

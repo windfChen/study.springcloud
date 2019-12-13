@@ -4,6 +4,14 @@ public class User {
     private Long id;
     private String name;
 
+    public User() {
+    }
+
+    public User(Long id) {
+        this();
+        this.id = id;
+    }
+
     public Long getId() {
         return id;
     }

@@ -1,18 +1,22 @@
 package com.windf.study.springcloud.course.repository.impl;
 
+import com.windf.study.springcloud.course.domain.Course;
 import com.windf.study.springcloud.course.domain.Elective;
 import com.windf.study.springcloud.course.repository.ElectiveRepository;
 import com.windf.study.springcloud.course.repository.impl.po.ElectivePO;
+import com.windf.study.springcloud.user.domain.User;
 import com.windf.study.springcloud.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCallback;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -80,7 +84,18 @@ public class ElectiveRepositoryImpl implements ElectiveRepository {
                         "  t_elective e " +
                         "INNER JOIN t_course c ON e.fk_course_id = c.id " +
                         "where e.fk_user_id = '" + userId + "'",
-                new BeanPropertyRowMapper<Elective>(Elective.class));
+                (rs, i) -> {
+                    Elective elective = new Elective();
+                    elective.setId(rs.getLong("id"));
+                    elective.setUser(new User(userId));
+
+                    Course course = new Course();
+                    course.setId(rs.getInt("course.id"));
+                    course.setCode(rs.getString("course.code"));
+                    course.setName(rs.getString("course.name"));
+                    elective.setCourse(course);
+                    return elective;
+                });
         return courses;
     }
 }

@@ -6,7 +6,6 @@
         <artifactId>abstract-combination</artifactId>
         <groupId>com.windf.study.springcloud</groupId>
         <version>1.0.0</version>
-        <relativePath>../abstract-combination/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

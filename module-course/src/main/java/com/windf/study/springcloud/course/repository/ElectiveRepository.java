@@ -4,7 +4,11 @@ import com.windf.study.springcloud.course.domain.Elective;
 
 import java.util.List;
 
+/*
+ * 选课操作
+ */
 public interface ElectiveRepository {
+
     void addUser(Integer courseId, Long userId);
 
     /**
