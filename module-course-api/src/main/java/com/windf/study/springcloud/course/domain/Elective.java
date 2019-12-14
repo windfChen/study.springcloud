@@ -10,6 +10,13 @@ public class Elective {
     private Course course;
     private User user;
 
+    public Elective() {
+    }
+
+    public Elective(long id) {
+        this.id = id;
+    }
+
     public long getId() {
         return id;
     }

@@ -10,7 +10,7 @@ public class ElectivePO {
     private int courseId;
 
     public Elective toElective() {
-        Elective elective = new Elective();
+        Elective elective = new Elective(id);
 
         Course course = new Course();
         course.setId(courseId);

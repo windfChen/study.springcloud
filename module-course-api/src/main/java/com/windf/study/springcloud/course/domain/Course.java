@@ -5,6 +5,13 @@ public class Course {
     private String code;
     private String name;
 
+    public Course() {
+    }
+
+    public Course(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
