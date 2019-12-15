@@ -25,7 +25,7 @@
         </dependency>
         <dependency>
             <groupId>com.windf.study.springcloud</groupId>
-            <artifactId>module-user-api</artifactId>
+            <artifactId>module-user</artifactId>
             <version>1.0.0</version>
             <scope>compile</scope>
         </dependency>

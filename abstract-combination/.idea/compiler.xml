@@ -6,36 +6,37 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="module-user-business" />
-        <module name="module-course-api (2)" />
-        <module name="client-user" />
-        <module name="module-user-repository" />
-        <module name="module-user-controller" />
-        <module name="module-course-business" />
-        <module name="service-eureka" />
-        <module name="module-user-remote" />
-        <module name="module-user-api" />
-        <module name="module-user-repository-mysql" />
-        <module name="module-course-repository" />
-        <module name="module-course-controller" />
-        <module name="module-course-repository-mysql" />
-        <module name="module-course-api" />
+        <module name="client-growing" />
         <module name="module-course-api (1)" />
-        <module name="client-course" />
+        <module name="module-course-api (2)" />
+        <module name="module-growing" />
+        <module name="module-growing-business" />
+        <module name="module-growing-controller" />
+        <module name="module-growing-repository" />
+        <module name="module-growing-repository-cassandra" />
+        <module name="module-user-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="abstract-combination" target="1.8" />
       <module name="client-course" target="1.8" />
+      <module name="client-growing" target="1.8" />
       <module name="client-user" target="1.8" />
       <module name="module-class" target="1.8" />
-      <module name="module-course-api" target="1.8" />
+      <module name="module-course" target="1.8" />
       <module name="module-course-api (1)" target="1.8" />
       <module name="module-course-api (2)" target="1.8" />
       <module name="module-course-business" target="1.8" />
       <module name="module-course-controller" target="1.8" />
       <module name="module-course-repository" target="1.8" />
       <module name="module-course-repository-mysql" target="1.8" />
+      <module name="module-growing" target="1.8" />
+      <module name="module-growing-business" target="1.8" />
+      <module name="module-growing-controller" target="1.8" />
+      <module name="module-growing-repository" target="1.8" />
+      <module name="module-growing-repository-cassandra" target="1.8" />
+      <module name="module-log" target="1.8" />
+      <module name="module-user" target="1.8" />
       <module name="module-user-api" target="1.8" />
       <module name="module-user-business" target="1.8" />
       <module name="module-user-controller" target="1.8" />
@@ -50,7 +51,7 @@
       <module name="client-course" options="-parameters" />
       <module name="client-user" options="-parameters" />
       <module name="module-class" options="-parameters" />
-      <module name="module-course-api" options="-parameters" />
+      <module name="module-course" options="-parameters" />
       <module name="module-course-api (2)" options="-parameters" />
       <module name="module-course-business" options="-parameters" />
       <module name="module-course-controller" options="-parameters" />
