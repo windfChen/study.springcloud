@@ -12,8 +12,8 @@ public class Event {
     private String code;            // 事件类型
     private String name;            // 事件名称
     private String description;     // 事件描述
-    private Date beginDate;         // 事件发生时间
-    private Date endDate;           // 事件结束时间
+    private Date beginDateTime;     // 事件发生时间
+    private Date endDateTime;       // 事件结束时间
     private int loadTime;           // 加载时间，单位ms
     private int durationTime;       // 持续时间，单位ms
 
@@ -65,20 +65,20 @@ public class Event {
         this.description = description;
     }
 
-    public Date getBeginDate() {
-        return beginDate;
+    public Date getBeginDateTime() {
+        return beginDateTime;
     }
 
-    public void setBeginDate(Date beginDate) {
-        this.beginDate = beginDate;
+    public void setBeginDateTime(Date beginDateTime) {
+        this.beginDateTime = beginDateTime;
     }
 
-    public Date getEndDate() {
-        return endDate;
+    public Date getEndDateTime() {
+        return endDateTime;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
+    public void setEndDateTime(Date endDateTime) {
+        this.endDateTime = endDateTime;
     }
 
     public int getLoadTime() {

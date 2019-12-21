@@ -5,6 +5,7 @@ package com.windf.study.springcloud.growing.domain;
  */
 public class App {
     private String code;         // 应用编号
+    private String type;         // 应用类型，浏览器、还是移动应用、小程序
     private String name;         // app名称
     private String version;      // app版本
     private String description;  // app描述
@@ -15,6 +16,14 @@ public class App {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getName() {
