@@ -11,7 +11,7 @@ public interface LoginService {
      * 用户登录
      * @param loginVO 登录相关的对象
      */
-    void login(LoginVO loginVO);
+    User login(LoginVO loginVO);
 
     /**
      * 用户进行登录
