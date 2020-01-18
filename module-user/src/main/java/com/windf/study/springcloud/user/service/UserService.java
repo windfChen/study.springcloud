@@ -1,7 +1,6 @@
 package com.windf.study.springcloud.user.service;
 
-
-import com.windf.study.springcloud.user.domain.User;
+import com.windf.study.springcloud.user.entity.User;
 
 import java.util.Collection;
 

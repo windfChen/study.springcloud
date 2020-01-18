@@ -1,4 +1,4 @@
-package com.windf.study.springcloud.user.domain;
+package com.windf.study.springcloud.user.entity;
 
 public class User {
     private Long id;
