@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/../client-course" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../client-growing" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../client-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-course" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-course-business" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-course-controller" charset="UTF-8" />
@@ -13,15 +14,15 @@
     <file url="file://$PROJECT_DIR$/../module-growing" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-growing-business" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-growing-controller" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../module-growing-repository" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-growing-repository-cassandra" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../module-log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../module-growing-repository-mysql" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-user-business" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-user-controller" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-user-remote" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-user-repository" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../module-user-repository-mysql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../plugin-controller-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../service-eureka" charset="UTF-8" />
   </component>
 </project>

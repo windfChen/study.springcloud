@@ -6,15 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="client-growing" />
+        <module name="client-user" />
+        <module name="core" />
         <module name="module-course-api (1)" />
         <module name="module-course-api (2)" />
-        <module name="module-growing" />
-        <module name="module-growing-business" />
-        <module name="module-growing-controller" />
-        <module name="module-growing-repository" />
-        <module name="module-growing-repository-cassandra" />
+        <module name="module-user" />
         <module name="module-user-api" />
+        <module name="module-user-business" />
+        <module name="module-user-controller" />
+        <module name="module-user-remote" />
+        <module name="module-user-repository" />
+        <module name="module-user-repository-mysql" />
+        <module name="plugin-controller-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +25,7 @@
       <module name="client-course" target="1.8" />
       <module name="client-growing" target="1.8" />
       <module name="client-user" target="1.8" />
+      <module name="core" target="1.8" />
       <module name="module-class" target="1.8" />
       <module name="module-course" target="1.8" />
       <module name="module-course-api (1)" target="1.8" />
@@ -35,6 +39,7 @@
       <module name="module-growing-controller" target="1.8" />
       <module name="module-growing-repository" target="1.8" />
       <module name="module-growing-repository-cassandra" target="1.8" />
+      <module name="module-growing-repository-mysql" target="1.8" />
       <module name="module-log" target="1.8" />
       <module name="module-user" target="1.8" />
       <module name="module-user-api" target="1.8" />
@@ -43,6 +48,7 @@
       <module name="module-user-remote" target="1.8" />
       <module name="module-user-repository" target="1.8" />
       <module name="module-user-repository-mysql" target="1.8" />
+      <module name="plugin-controller-api" target="1.8" />
       <module name="service-eureka" target="1.8" />
     </bytecodeTargetLevel>
   </component>

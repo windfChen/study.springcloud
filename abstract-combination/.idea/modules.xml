@@ -3,12 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/abstract-combination.iml" filepath="$PROJECT_DIR$/.idea/abstract-combination.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../client-growing/client-growing.iml" filepath="$PROJECT_DIR$/../client-growing/client-growing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../module-growing/module-growing.iml" filepath="$PROJECT_DIR$/../module-growing/module-growing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../module-growing-business/module-growing-business.iml" filepath="$PROJECT_DIR$/../module-growing-business/module-growing-business.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../module-growing-controller/module-growing-controller.iml" filepath="$PROJECT_DIR$/../module-growing-controller/module-growing-controller.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../module-growing-repository/module-growing-repository.iml" filepath="$PROJECT_DIR$/../module-growing-repository/module-growing-repository.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../module-growing-repository-cassandra/module-growing-repository-cassandra.iml" filepath="$PROJECT_DIR$/../module-growing-repository-cassandra/module-growing-repository-cassandra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../client-user/client-user.iml" filepath="$PROJECT_DIR$/../client-user/client-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../core/core.iml" filepath="$PROJECT_DIR$/../core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../module-user/module-user.iml" filepath="$PROJECT_DIR$/../module-user/module-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../module-user-business/module-user-business.iml" filepath="$PROJECT_DIR$/../module-user-business/module-user-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../module-user-controller/module-user-controller.iml" filepath="$PROJECT_DIR$/../module-user-controller/module-user-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../module-user-remote/module-user-remote.iml" filepath="$PROJECT_DIR$/../module-user-remote/module-user-remote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../module-user-repository/module-user-repository.iml" filepath="$PROJECT_DIR$/../module-user-repository/module-user-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../module-user-repository-mysql/module-user-repository-mysql.iml" filepath="$PROJECT_DIR$/../module-user-repository-mysql/module-user-repository-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../plugin-controller-api/plugin-controller-api.iml" filepath="$PROJECT_DIR$/../plugin-controller-api/plugin-controller-api.iml" />
     </modules>
   </component>
 </project>
