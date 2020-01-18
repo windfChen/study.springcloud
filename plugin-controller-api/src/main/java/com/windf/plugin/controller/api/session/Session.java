@@ -21,4 +21,10 @@ public interface Session {
 	 * 注销
 	 */
 	void invalidate();
+
+	/**
+	 * 获取sessionId
+	 * @return
+	 */
+	String getSessionId();
 }

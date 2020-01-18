@@ -34,4 +34,9 @@ public class WebSession implements Session {
         session.invalidate();
     }
 
+    @Override
+    public String getSessionId() {
+        return session.getId();
+    }
+
 }
