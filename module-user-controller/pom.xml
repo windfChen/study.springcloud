@@ -12,10 +12,13 @@
     <artifactId>module-user-controller</artifactId>
 
     <dependencies>
+
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.windf</groupId>
+            <artifactId>plugin-controller-api</artifactId>
+            <version>1.0.0</version>
         </dependency>
+        
         <dependency>
             <groupId>com.windf.study.springcloud</groupId>
             <artifactId>module-user</artifactId>

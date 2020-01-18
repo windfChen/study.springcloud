@@ -1,7 +1,7 @@
 package com.windf.study.springcloud.user.controller;
 
-
-import com.windf.study.springcloud.user.domain.User;
+import com.windf.plugin.controller.api.controller.BaseController;
+import com.windf.study.springcloud.user.entity.User;
 import com.windf.study.springcloud.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-public class UserController {
+public class UserController extends BaseController {
 
     @Autowired
     private UserService userService;
