@@ -1,6 +1,7 @@
 package com.windf.study.springcloud.user.service;
 
 import com.windf.study.springcloud.user.entity.LoginVO;
+import com.windf.study.springcloud.user.entity.User;
 
 /**
  * 用户登录相关
@@ -15,7 +16,7 @@ public interface LoginService {
     /**
      * 用户进行登录
      */
-    void login();
+    void doLogin(User user);
 
     /**
      * 用户登出

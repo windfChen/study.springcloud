@@ -9,5 +9,5 @@ public interface UserService {
 
     Collection<User> findAll();
 
-    User getUserById(Long id);
+    User getUserById(String id);
 }
