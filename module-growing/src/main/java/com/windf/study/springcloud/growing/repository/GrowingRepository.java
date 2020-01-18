@@ -8,5 +8,5 @@ public interface GrowingRepository {
      * @param log
      * @return
      */
-    Log save(Log log);
+    void save(Log log);
 }
