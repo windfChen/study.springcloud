@@ -13,6 +13,11 @@ public interface LoginService {
     void login(LoginVO loginVO);
 
     /**
+     * 用户进行登录
+     */
+    void login();
+
+    /**
      * 用户登出
      */
     void logout();
