@@ -17,7 +17,7 @@ public class UserController extends BaseController {
     @PostMapping("/user")
     public User save(@RequestParam String name) {
         User user = new User();
-        user.setName(name);
+        user.setUsername(name);
         userService.save(user);
         return user;
     }
@@ -28,7 +28,7 @@ public class UserController extends BaseController {
     }
 
     @GetMapping("/user/{id}")
-    public User getById(@PathVariable Long id) {
+    public User getById(@PathVariable String id) {
         return userService.getUserById(id);
     }
 
