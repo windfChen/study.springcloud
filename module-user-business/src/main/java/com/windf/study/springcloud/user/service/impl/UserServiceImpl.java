@@ -1,6 +1,6 @@
 package com.windf.study.springcloud.user.service.impl;
 
-import com.windf.study.springcloud.user.domain.User;
+import com.windf.study.springcloud.user.entity.User;
 import com.windf.study.springcloud.user.repository.UserRepository;
 import com.windf.study.springcloud.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
