@@ -22,31 +22,34 @@
     </properties>
 
     <modules>
-        <module>../core</module>
-        <module>../plugin-controller-api</module>
-
         <module>../module-user</module>
         <module>../module-user-business</module>
         <module>../module-user-controller</module>
-        <module>../module-user-remote</module>
+        <module>../module-user-controller-provider-alibaba</module>
+<!--        <module>../module-user-remote</module>-->
+        <module>../module-user-remote-alibaba</module>
         <module>../module-user-repository</module>
         <module>../module-user-repository-mysql</module>
-        <module>../client-user</module>
+<!--        <module>../client-user</module>-->
+        <module>../client-alibaba-user</module>
 
-        <!--<module>../module-course</module>-->
-        <!--<module>../module-course-business</module>-->
-        <!--<module>../module-course-controller</module>-->
-        <!--<module>../module-course-repository</module>-->
-        <!--<module>../module-course-repository-mysql</module>-->
-        <!--<module>../client-course</module>-->
+        <module>../module-course</module>
+        <module>../module-course-business</module>
+        <module>../module-course-controller</module>
+        <module>../module-course-repository</module>
+        <module>../module-course-repository-mysql</module>
+<!--        <module>../client-course</module>-->
+        <module>../client-alibaba-course</module>
 
-        <!--<module>../module-growing</module>-->
-        <!--<module>../module-growing-business</module>-->
-        <!--<module>../module-growing-controller</module>-->
-        <!--<module>../module-growing-repository-mysql</module>-->
-        <!--<module>../client-growing</module>-->
+<!--        <module>../module-growing</module>-->
+<!--        <module>../module-growing-business</module>-->
+<!--        <module>../module-growing-controller</module>-->
+<!--        <module>../module-growing-repository</module>-->
+<!--        <module>../module-growing-repository-cassandra</module>-->
+<!--        <module>../client-growing</module>-->
 
-        <!--<module>../service-eureka</module>-->
+<!--        <module>../service-eureka</module>-->
+<!--        <module>../service-config</module>-->
 
     </modules>
 
